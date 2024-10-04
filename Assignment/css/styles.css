@@ -1,0 +1,103 @@
+#loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  width: 100vw;  /* Full viewport width to center horizontally */
+  position: fixed; /* Ensure it's overlaid on the whole screen */
+  top: 0;
+  left: 0;
+}
+
+ /* The container will adapt to the viewport size */
+        .svg-container {
+            width: 35%; /* Adjusts based on screen width */
+            max-width: 200px; /* Maximum width */
+            height: auto;
+        }
+
+        .path {
+            stroke-dasharray: 4000;
+            stroke-dashoffset: 4000;
+            animation: draw 7s infinite, fillAnimation 7s forwards;
+            stroke: #000000; /* Outline stroke color */
+            stroke-width: 50;
+            fill: url(#grad1); /* Apply gradient to the fill */
+        }
+
+        .path_1 {
+      
+            animation: draw 10s forwards  infinite;
+            stroke: #f2f2f2; /* Outline stroke color */
+            stroke-width: 70;
+
+           
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fillAnimation {
+            0% {
+                fill-opacity: 0;
+            }
+            50% {
+                fill-opacity: 1;
+            }
+            100% {
+                fill-opacity: 0;
+            }
+        }
+
+        /* Ensure SVG scales responsively */
+        svg {
+            width: 100%; /* Fills the container's width */
+            height: auto;
+        }
+
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 16rem; /* Adjust as needed */
+            height: 100vh;
+            background-color: #1a202c;
+            color: white;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-out;
+            z-index: 1000;
+        }
+        .sidebar.open {
+            transform: translateX(0);
+        }
+        .hidden {
+            display: none;
+        }
+        .primary {
+            background: #3BEF80;
+        }
+        .primarytext {
+            color: #3BEF80;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 900;
+            display: none;
+        }
+        .overlay.show {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            #assignmentList {
+                margin-left: 0; /* Remove margin for small screens */
+            }
+        }

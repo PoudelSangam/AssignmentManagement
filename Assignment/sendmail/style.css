@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+button.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+progress.hidden {
+    display: none;
+}
+
+progress {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    color: #28a745;
+}
+  body {
+            padding-top: 56px; /* Adjust according to the height of your header */
+            /* 56px is the default height of Bootstrap navbar */
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure header is above other content */
+        }
+
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }

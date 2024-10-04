@@ -1,0 +1,69 @@
+{
+  "name": "Bit-Er",
+  "short_name": "Bit-Er",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "img/logo192*192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/logo512*512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+      {
+      "src": "img/icon.png",
+      "type": "image/png",
+      "sizes": "96x96"
+     
+    }
+  ],
+  "scope": "/",
+  "description": "Bit-Er is a progressive web application (PWA) designed for IOE engineering students to provide a seamless and optimized experience. With Bit-Er, students can easily access assignment details, view lecture notes, and browse old question papers. Additionally, it offers the functionality to send lab codes directly to your Gmail, making it a comprehensive tool for managing academic resources efficiently.",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "lang": "en",
+  "screenshots": [
+    {
+      "src": "img/458568335_980226417121633_3970541501186212383_n.jpg",
+      "type": "image/jpg",
+      "sizes": "640x480"
+    },
+    {
+      "src": "img/459171057_837269618520549_250685125038930910_n.jpg",
+      "type": "image/jpg",
+      "sizes": "1280x720"
+    },
+    {
+      "src": "img/459185709_1097070415382406_5378979998183534143_n.jpg",
+      "type": "image/jpg",
+      "sizes": "1280x720"
+    },
+    {
+      "src": "img/459261130_1094166199094049_5327654555120053090_n.jpg",
+      "type": "image/jpg",
+      "sizes": "1280x720"
+    },
+    {
+      "src": "img/459317515_542084761726248_4451821728992330420_n.jpg",
+      "type": "image/jpg",
+      "sizes": "1280x720"
+    }
+  ],
+  "display_override": [
+    "window-controls-overlay",
+    "fullscreen"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 0
+  }
+}

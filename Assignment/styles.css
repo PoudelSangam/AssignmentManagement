@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+     margin: 0;
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.assignment {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.assignment h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.assignment p {
+   margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.assignment.overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.assignment.ongoing {
+    background-color: #d4edda;
+    color: #155724;
+}
+  .assignment-question {
+        white-space: pre-wrap; /* Maintains whitespace and wraps text */
+        word-wrap: break-word; /* Breaks words to wrap */
+        overflow-wrap: break-word; /* Ensures long words are wrapped */
+    }
+
+.content {
+    flex: 1;
+}
+
+/* Style the footer */
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card.overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.card.ongoing {
+    background-color: #d4edda;
+    color: #155724;
+}
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* bg-dark */
+    color: white;
+    text-align: center;
+
+}
+#loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.loader div {
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+/* Specific animation delays for each ball */
+.loader div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
