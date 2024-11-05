@@ -1,22 +1,21 @@
-name: FTP Deploy
-
-on:
+on: 
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main
+name: 🚀 Deploy website on push
 
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy website
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0  # Adjust version as needed
-        with:
-          ftp-server: ${{ secrets.FTP_SERVER }}   # Correct input key
-          ftp-username: ${{ secrets.FTP_USERNAME }}   # Correct input key
-          ftp-password: ${{ secrets.FTP_PASSWORD }}   # Correct input key
-         
+    # Checkout the repository
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    # sync files via FTP
+    - name: 📂 Sync files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASS }
