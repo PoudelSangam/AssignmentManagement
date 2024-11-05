@@ -1,20 +1,17 @@
-# Ignore node_modules
-node_modules/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Ignore environment variables
-.env
+# Local History for Visual Studio Code
+.history/
 
-# Ignore log files
-*.log
+# Built Visual Studio Code Extensions
+*.vsix
 
-# Ignore compiled files
-*.class
-*.pyc
-*.o
-
-# Ignore system files
-.DS_Store
-Thumbs.db
-
-# Ignore database files
-*.sql
+*.env
+*.env.example
+*.env.local
+*.env.staging
