@@ -2,9 +2,13 @@
 include_once "check_status.php";
 include_once "header.php";
 include_once "../db.php";
-
+$semester = $_SESSION["semester"]; // Corrected to $_SESSION
 // Fetch assignments from the database
-$sql = "SELECT id, `time`, `dead-line`, subject, assignment_question, assignment_number FROM assignmentlist ORDER BY time DESC";
+$sql = "SELECT id, `time`, `dead-line`, subject, assignment_question, assignment_number 
+        FROM assignmentlist 
+        WHERE Semester = '$semester' 
+        ORDER BY `time` DESC";
+
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $result = $stmt->get_result();

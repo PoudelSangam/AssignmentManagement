@@ -52,11 +52,11 @@ self.addEventListener('fetch', (event) => {
 
 
 
-    const options = {
+       const options = {
         body: data.body || 'Default body',
-        icon:'img/logo192*192.png',
+        icon: 'img/logo192x192.png',
         badge: 'img/icon.png',
-        data: data.url || '/',
+        data: { link: data.link || '/' }, // add link to data object
         actions: data.actions || [],
     };
 
@@ -67,9 +67,8 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('notificationclick', function(event) {
     event.notification.close();
-    if (event.notification.data) {
-        event.waitUntil(
-            clients.openWindow(event.notification.data)
-        );
-    }
+    const link = event.notification.data.link; // access link in data
+    event.waitUntil(
+        clients.openWindow(link) // open the link
+    );
 });

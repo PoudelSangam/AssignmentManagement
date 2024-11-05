@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Lost in the Desert</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB 0%, #ffcc99 100%);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Sun with Heatwave Effect */
+        .sun {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #FFD700, #FF8C00);
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            animation: heat-glow 3s infinite;
+            filter: blur(1px);
+        }
+
+        /* Sand Dunes */
+        .sand {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to right, #f4e19c 0%, #e0c085 100%);
+            clip-path: polygon(0 70%, 20% 50%, 40% 70%, 60% 50%, 80% 70%, 100% 50%, 100% 100%, 0 100%);
+        }
+
+        /* Heatwave */
+        .heatwave {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 20px;
+            background: rgba(255, 200, 0, 0.2);
+            animation: wave 1.5s infinite;
+            transform: translateY(0);
+        }
+
+        /* SVG Man Walking */
+        .man {
+            position: relative;
+            /*width: 100px;*/
+            animation: man-walk 15s infinite linear;
+        }
+
+        /* Message */
+        .message {
+            position: absolute;
+            top: 93%;
+            font-size: 24px;
+            opacity: 0;
+            animation: fade-in 1s forwards 4s;
+            color: #333;
+            z-index:1;
+        }
+
+        /* Animations */
+        @keyframes heat-glow {
+            0% { transform: scale(1); filter: blur(1px); }
+            100% { transform: scale(1.05); filter: blur(3px); }
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(5px); }
+        }
+
+        @keyframes man-walk {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(500px); }
+        }
+
+        @keyframes fade-in {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+     <div class="man">404 Not found</div>
+    <!-- SVG for Walking Man -->
+    <div class="man">
+        <svg width="100" height="200" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Head -->
+            <circle cx="50" cy="30" r="20" fill="#ffcc00" />
+
+            <!-- Body -->
+            <rect x="40" y="50" width="20" height="60" fill="#008000" />
+
+            <!-- Arms -->
+            <rect class="arm left-arm" x="20" y="50" width="15" height="50" fill="#008000" transform-origin="30px 50px" />
+            <rect class="arm right-arm" x="65" y="50" width="15" height="50" fill="#008000" transform-origin="75px 50px" />
+
+            <!-- Legs -->
+            <rect class="leg left-leg" x="30" y="110" width="15" height="60" fill="#654321" transform-origin="47.5px 110px" />
+            <rect class="leg right-leg" x="55" y="110" width="15" height="60" fill="#654321" transform-origin="62.5px 110px" />
+        </svg>
+    </div>
+
+    <h1 class="message">Oops! You're lost in the desert.</h1>
+
+    <div class="sand"></div>
+ 
+
+    <script>
+        // Animate arms and legs of the SVG man
+        const leftArm = document.querySelector('.left-arm');
+        const rightArm = document.querySelector('.right-arm');
+        const leftLeg = document.querySelector('.left-leg');
+        const rightLeg = document.querySelector('.right-leg');
+
+        // Swing arms and legs back and forth
+        leftArm.style.animation = 'swing-arm 1s infinite alternate ease-in-out';
+        rightArm.style.animation = 'swing-arm 1s infinite alternate-reverse ease-in-out';
+        leftLeg.style.animation = 'swing-leg 1s infinite alternate ease-in-out';
+        rightLeg.style.animation = 'swing-leg 1s infinite alternate-reverse ease-in-out';
+
+        // Arm and leg animations
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                @keyframes swing-arm {
+                    0% { transform: rotate(10deg); }
+                    100% { transform: rotate(-10deg); }
+                }
+
+                @keyframes swing-leg {
+                    0% { transform: rotate(10deg); }
+                    100% { transform: rotate(-10deg); }
+                }
+            </style>
+        `);
+    </script>
+</body>
+</html>

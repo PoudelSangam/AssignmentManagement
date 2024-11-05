@@ -87,9 +87,10 @@ foreach ($results as $notice) {
         $body = " "; // Notification message body
         $college = '0';
         $intake_year = '0';
+        $link="https://poudelsangam.com.np/Assignment/notices/";
 
                 // Call the notification function for each faculty and intake year combination
-                sendNotifications($conn, $intake_year, $faculty, $college, $title, $body);
+                sendNotifications($conn, $intake_year, $faculty, $college, $title, $body, $link);
                 
 
             }

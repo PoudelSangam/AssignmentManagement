@@ -11,7 +11,14 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
                    
                     
                     subscribeUser(registration);
-                    alert("you will get every notification");
+                   
+                });
+                 document.getElementById('subscribeButton2').addEventListener('click', function() {
+                   
+                    
+                    subscribeUser(registration);
+                    // document.getElementById("subscribeModal").style.display = "none";
+                  
                 });
             // } else {
             //     console.log('User is already subscribed:', subscription);

@@ -103,44 +103,64 @@
         "Engineering Mathematics I",
         "Engineering Drawing",
         "Engineering Physics",
-        "Basic Electrical and Electronics Engineering",
-        "Engineering Workshop"
+        "Fundamental of Electrical and Electronics Engineering",
+        "Engineering Workshop",
+        "Computer Programming"
       ],
       "Semester 2": [
         "Engineering Mathematics II",
-        "Digital Logic and Design",
+        "Digital Logic",
         "Electronic Devices and Circuits",
-        "Electrical Engineering Laboratory",
-        "Electrical Circuits and Machines"
+        "Electrical Circuits and Machines",
+        "Engineering Chemistry",
+        "Object Oriented Programming"
       ],
       "Semester 3": [
         "Engineering Mathematics III",
-        "Object-Oriented Programming",
-        "Signals and Systems",
-        "Data Structures",
-        "Electromagnetics"
+        "Communication English",
+        "Computer Graphics and Visualization",
+        "Foundation of Data Science",
+        "Theory of Computation",
+        "Microprocessor"
       ],
       "Semester 4": [
-        "Engineering Mathematics IV",
-        "Applied Mathematics",
-        "Data Structures and Algorithms",
-        "Microprocessors",
-        "Discrete Structures"
+        "Probaility and Statistics",
+        "Instrumentation",
+        "Electromagnetics",
+        "Discrete Structure and Algorithm",
+        "Data Communication",
+        "Operating System"
       ],
       "Semester 5": [
-        "Communication Systems",
-        "Probability and Statistics",
-        "Instrumentation and Control",
-        "Microprocessors and Embedded Systems",
-        "Computer Graphics",
-        "Data Communication"
+        "Numerical Methods",
+        "Database Management System",
+        "Web Application Programming",
+        "Computer Organization and Architecture",
+        "Computer Network",
+        "Elective I"
       ],
       "Semester 6": [
         "Engineering Economics",
-        "Operating Systems",
-        "Database Management Systems",
-        "Object-Oriented Analysis and Design",
-        "Minor Project"
+        "Artifical Intelliigence",
+        "Software Engineering",
+        "Simulation and Modeling",
+        "Minor Project",
+        "Elective II"
+      ],
+      "Semester 7":[
+        "Digital Signal Analysis and Processing",
+        "Distributed and Cloud Computing",
+        "ICT Project Management",
+        "Energy, Environment and Social Engineering",
+        "Elective III",
+        "Project I"
+      ],
+      "Semester 8":[
+        "Network and Cyber Security",
+        "Elective IV",
+        "internship",
+        "project II"
+       
       ]
     }
   },
@@ -239,34 +259,222 @@
       ],
       "Semester 3": [
         "Engineering Mathematics III",
-        "Building Technology",
-        "Mechanics of Solids",
-        "Fluid Mechanics",
-        "Surveying II"
+        "Communication English",
+        "Computer Graphics and Visualization",
+        "Microprocessor",
+        "Advanced Electronics",
+        "Control System"
       ],
       "Semester 4": [
-        "Structural Analysis I",
-        "Soil Mechanics",
-        "Hydraulics",
-        "Concrete Technology",
-        "Numerical Methods"
+       "Probaility and Statistics",
+       "Discrete Structure and Algorithm",
+       "Instrumentation",
+       "Computer Organization and Architecture",
+       "Electromagnetics",
+       "Signal and Systems"
       ],
       "Semester 5": [
-        "Structural Analysis II",
-        "Environmental Engineering",
-        "Transportation Engineering",
-        "Hydrology",
-        "Engineering Economics"
+        "Numerical Methods",
+        "Artificial Intelligence",
+        "Filter Design",
+        "Embedded System",
+        "Elective I"
       ],
       "Semester 6": [
-        "Foundation Engineering",
-        "Design of Concrete Structures",
-        "Water Supply Engineering",
-        "Highway Engineering",
-        "Project Management",
-        "Irrigation Engineering",
+        "ICT Project Management",
+        "Engineering Economics",
+        "Communication System",
+        "Telecommunication and Computer Network",
+        "Minor Projet",
         "Minor Project"
+      ],
+      "Semester 7":[
+        "RF and Microwave Engineering",
+        "Robotics",
+        "Digital Signal Processing",
+        "Elective III",
+        "Project I",
+        "Wireless Communication"
+      ],
+      "Semester 8":[
+        "Energy, Environment and Social Engineering",
+        "Elective IV",
+        "Project II"
       ]
     }
+  },
+
+  "bce": {
+    "old": {
+      "Semester 1": [
+        "Engineering Drawing I",
+        "Engineering Mathematics I",
+        "Fundamental of Thermodynamics and Heat Transfer",
+        "Engineering Chemistry",
+        "Workshop Technology",
+        "Computer Programming"
+      ],
+      "Semester 2": [
+        "Engineering Mathematics II",
+        "Engineering Drawing II",
+        "Basic Electronics Engineering",
+        "Engineering Physics",
+        "Applied Mechanics",
+        "Basic Electrical Engineering"
+      ],
+      "Semester 3": [
+        "Engineering Mathematics III",
+        "Civil Engineering Materials",
+        "Applied Mechanics (Dynamics)",
+        "Engineering Geology I",
+        "Strength of Materials",
+        "Surveying I",
+        "Fluid Mechanics"
+      ],
+      "Semester 4": [
+        "Hydraulics",
+        "Surveying II",
+        "Theory of Structure",
+        "Engineering Geology II",
+        "Building Drawing",
+        "Soil mechanics"
+      ],
+      "Semester 5": [
+        "Theory of Structure II",
+        "Water Supply Engineering",
+        "Engineering Hydrology",
+        "Concrete Technology and Masonry Structure",
+        "Numerical Methods",
+        "Foundation Engineering",
+        "Survey Camp"
+      ],
+      "Semester 6": [
+        "Design of Steel and Timber Structure",
+        "Communication English",
+        "Engineerng Economics",
+        "Sanitary Engineering",
+        "Building technology",
+        "Tranportation Engineering",
+        "Irrigation and Drainage"
+      ],
+      "Semester 7": [
+        "Hydropower Engineering",
+        "Project Engineering",
+        "Transportation Engineering II",
+        "Estimating & Costing",
+        "Design of RCC Structure",
+        "Project (Part I)",
+        "Elective I : Bio-Engineering",
+        "Elective I : Water and WasteWater Quality Analysis",
+        "Elective I : Soil Conservation and Watershed Management",
+        "Elective I : Trail Suspension Bridge",
+        "Elective I : Structural Dynamics",
+        "Elective I : Seismic Resistant Design of Masonry Structures",
+        "Elective I : Solid Waste Management",
+        "Elective I : Ropeway Engineering",
+        "Elective I : Transportation Planning and Engineering",
+        "Elective I : Rock Engineering",
+        "Elective I : Community Development and Participatory Rural Approach",
+        "Elective I : Earth Hazard"
+
+      ],
+      "Semester 8": [
+        "Technology Environment and Society",
+        "Construction Management",
+        "Project (Part II)",
+        "Engineering Professional Practice",
+        "Computational Techniques in Civil Engineering",
+        "Elective II : Climate Change",
+        "Elective II : Environmental Management System",
+        "Elective II : Groundwater Engineering",
+        "Elective II : Seismic Risk Assessment",
+        "Elective II : Water Quality Management",
+        "Elective II : Traffic and Transport Modeling",
+        "Elective II : Traffic Engineering and Management",
+        "Elective II : Rural Road Engineering",
+        "Elective II : Rock Slope Engineering",
+        "Elective II : Rock Mechanics",
+        "Elective II : Public Health and Risk Assessment",
+        "Elective II : Vulnerability Assessment and Retrofitting Techniques",
+        "Elective II : Design of Bridges",
+        "Elective II : Introduction to Prestressed Concrete Analysis and Design",
+        "Elective II : Post Disaster Water and Sanitation Management",
+        "Elective II : Hill Irrigation Engineering",
+        "Elective II : Geotechnical Earthquake Engineering",
+        "Elective II : Advanced Geotechnical Engineering",
+        "Elective II : Earthquake Resistant Design of Structures",
+        "Elective II : Domestic Water and Waste Water Engineering and Management",
+        "Elective III : Construction Safety Management",
+        "Elective III : Procurement Management",
+        "Elective III : Time Series Analysis",
+        "Elective III : Environmental Impact Assessment (EIA)",
+        "Elective III : GIS Application and Remote Sensing",
+        "Elective III : Disaster Risk Management"
+
+      ]
+    },
+    "new": {
+      "Semester 1": [
+        "Engineering Mathematics I",
+        "Engineering Physics",
+        "Engineering Drawing",
+        "Applied Mechanics",
+        "Computer Programming"
+      ],
+      "Semester 2": [
+        "Engineering Mathematics II",
+        "Surveying I",
+        "Basic Electronics",
+        "Engineering Chemistry",
+        "Engineering Materials"
+      ],
+      "Semester 3": [
+        "Engineering Mathematics III",
+        "Numerical Methods",
+        "Fluid Mechanics",
+        "Theory of Structures I",
+        "Engineering Survey II",
+        "Computer Aided Civil Drawing",
+        "Concrete Technology"
+      ],
+      "Semester 4": [
+       "Communication English",
+       "Probabilty and Statistics",
+       "Hydraulics",
+       "Theory of Structures II",
+       "Soil Mechanics",
+       "Water Supply Engineering",
+       "Building Technology"
+      ],
+      "Semester 5": [
+      "Design of Timber and masonry Structures",
+      "Foundation Engineering",
+      "Design of Steel Structures",
+      "Transportation Engineering I",
+      "Sanitary Engineering",
+      "Engineering Hydrology",
+      "Engineering Economics"
+      ],
+      "Semester 6": [
+       "Estimating and Costing",
+       "Design of RCC Structures",
+       "Transportation Engineering II",
+       "Irrigation and Drainage Engineering",
+       "Professional and Social Engineering",
+       "Elective I"
+      ],
+      "Semester 7":[
+      "Operations Research",
+      "Project and Construction Engineering",
+      "Hydropower Engineering",
+      "Elective II",
+      "Elective III",
+      "Project I"
+      ],
+      "Semester 8":[
+      "Project II",
+      "Internship"
+      ]
+    } 
   }
 }

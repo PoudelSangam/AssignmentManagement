@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+sitemap:https://poudelsangam.com.np/sitemap.xml
+sitemap:https://poudelsangam.com.np/sitemap-1.xml
+sitemap:https://poudelsangam.com.np/sitemap-2.xml
+sitemap:https://poudelsangam.com.np/sitemap-3.xml
+sitemap:https://poudelsangam.com.np/sitemap-4.xml
+sitemap:https://poudelsangam.com.np/sitemap-5.xml
+sitemap:https://poudelsangam.com.np/sitemap-6.xml
+sitemap:https://poudelsangam.com.np/sitemap-7.xml
+sitemap:https://poudelsangam.com.np/sitemap-8.xml
+sitemap:https://poudelsangam.com.np/sitemap-9.xml
+sitemap:https://poudelsangam.com.np/sitemap-10.xml
+sitemap:https://poudelsangam.com.np/sitemap-11.xml
+sitemap:https://poudelsangam.com.np/sitemap-12.xml
+sitemap:https://poudelsangam.com.np/sitemap-13.xml
+sitemap:https://poudelsangam.com.np/sitemap-14.xml
+sitemap:https://poudelsangam.com.np/sitemap-15.xml
+sitemap:https://poudelsangam.com.np/sitemap-16.xml
+sitemap:https://poudelsangam.com.np/sitemap-17.xml
+sitemap:https://poudelsangam.com.np/sitemap-18.xml
+sitemap:https://poudelsangam.com.np/sitemap-19.xml
+sitemap:https://poudelsangam.com.np/sitemap-20.xml

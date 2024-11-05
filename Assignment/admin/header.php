@@ -72,7 +72,7 @@
             <ul>
                 <li><a href="https://poudelsangam.com.np/Assignment/admin/dashboard.php" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
                 <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Add Notes</a></li>
-                <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Add Notices</a></li>
+                <li><a href="https://poudelsangam.com.np/Assignment/admin/Add Notices/" class="block py-2 px-4 hover:bg-gray-700">Add Notices</a></li>
                 <li><a href="https://poudelsangam.com.np/Assignment/admin/addassignment/index.php" class="block py-2 px-4 hover:bg-gray-700">Add Assignments</a></li>
                 <li><a href="https://poudelsangam.com.np/Assignment/admin/logout.php" class="block py-2 px-4 hover:bg-gray-700">Logout</a></li>
             </ul>

@@ -82,6 +82,9 @@ function login_to_cr($user,$conn) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Access IOE past questions and semester-wise notes for all subjects. Prepare for your exams with old question papers and detailed notes for each semester.">
     <meta name="keywords" content="IOE past questions, IOE old questions, IOE semester notes, engineering exam questions, IOE model questions, IOE question papers, IOE exam preparation, IOE first semester notes, IOE third semester past questions, IOE exam papers, engineering past papers, IOE old question papers, semester-wise IOE notes, previous year IOE questions, engineering study materials, IOE subject notes, IOE syllabus notes, IOE PDF download, Nepal IOE exam papers, IOE student resources">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#014473">
     
     <link rel="icon" type="image/x-icon" href="https://niranjanbhatta.com.np/assets/smalllogo-5gRCzB8E.svg">
     <title>Assignments Dashboard</title>

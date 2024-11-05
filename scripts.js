@@ -1,11 +1,9 @@
-
-
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
-  deferredPrompt = e;
-  showInstallModal();
+  deferredPrompt = e; // Save the event for triggering later
+  showInstallModal(); // Show the install modal to prompt the user
 });
 
 function showInstallModal() {
@@ -13,22 +11,49 @@ function showInstallModal() {
   installModal.classList.remove('hidden');
 
   document.getElementById('installAppButton').addEventListener('click', () => {
-    installModal.classList.add('hidden');
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the install prompt');
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isAndroid = /android/i.test(userAgent);
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+
+    if (isAndroid) {
+      download(); // Download APK for Android without PWA prompt
+    } else if (isIOS) {
+      if (deferredPrompt) {
+        deferredPrompt.prompt(); // Show the PWA prompt on iOS
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the PWA install prompt');
+          } else {
+            console.log('User dismissed the PWA install prompt');
+          }
+          deferredPrompt = null; // Clear the prompt after user choice
+        });
       } else {
-        console.log('User dismissed the install prompt');
+        console.log('PWA installation prompt not available');
       }
-      deferredPrompt = null;
-    });
+    } else {
+      console.log('Unsupported platform: no action taken');
+    }
+
+    installModal.classList.add('hidden'); // Hide the modal after user's action
   });
 
   document.getElementById('closeModalButton').addEventListener('click', () => {
     installModal.classList.add('hidden');
   });
 }
+
+function download() {
+  const downloadUrl = `https://poudelsangam.com.np/apk/Bit-Er.apk`;
+  const link = document.createElement('a');
+  link.href = downloadUrl;
+  link.setAttribute('download', 'Bit-Er.apk'); // APK file name
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
+
 
 function urlBase64ToUint8Array(base64String) {
   const padding = '='.repeat((4 - base64String.length % 4) % 4);
@@ -88,4 +113,5 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
 

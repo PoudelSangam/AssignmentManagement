@@ -48,5 +48,5 @@ if ($result->num_rows > 0) {
 }
 
 $checkEmailSql->close();
-$conn->close();
+// $conn->close();
 ?>

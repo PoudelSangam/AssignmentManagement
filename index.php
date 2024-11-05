@@ -134,6 +134,7 @@
 
         </form>
     </div>
+    
     <!-- Modal -->
 <div id="installModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
   <div class="bg-white w-full max-w-md mx-auto rounded-lg shadow-lg p-6">
@@ -151,6 +152,6 @@
 
      
 </body>
-<script src="scripts.js?v=<?php echo $version ?>"></script>
+<script src="scripts.js"></script>
 </html>
 

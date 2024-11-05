@@ -35,8 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $title = "New Assignment";
             $body = "Assignment of {$subject} is added. Deadline is {$deadline}.";
-            
-            sendNotifications($conn, $intake_year, $faculty, $college, $title, $body);
 
             // Insert assignment details into the database
             $insert_sql = "INSERT INTO assignmentlist (`dead-line`, subject, assignment_question, assignment_number, intake_year, faculty, college, semester) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -44,7 +42,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $insert_stmt->bind_param('sssisssi', $deadline, $subject, $assignment_question, $assignment_number, $intake_year, $faculty, $college, $semester);
 
                 if ($insert_stmt->execute()) {
-                    echo "Assignment added succesfully";
+                    // Get the ID of the inserted assignment
+                    $assignment_id = $conn->insert_id;
+                    echo "Assignment added successfully with ID: " . $assignment_id;
+
+                    // Include assignment ID in the link
+                    $link = "https://poudelsangam.com.np/Assignment/assignment_detail.php?id=" . $assignment_id;
+                    
+                    // Send notifications with the generated link
+                    sendNotifications($conn, $intake_year, $faculty, $college, $title, $body, $link, $semester);
+                    
                 } else {
                     echo "Error: " . $insert_stmt->error;
                 }
@@ -61,6 +68,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 $conn->close();
-
-
 ?>

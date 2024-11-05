@@ -95,6 +95,9 @@ function calculateSemester($intakeYearBS, $intakeMonthBS=1, $intakeDayBS=1) {
 
     // Get the current date
     $currentDate = new DateTime();
+    
+    // // Set the date to 2024-10-10 (Year, Month, Day)
+    // $currentDate->setDate(2024, 10,13 ); 
 
     // Calculate the number of days since the intake date
     $daysSinceIntake = $intakeDateAD->diff($currentDate)->days;

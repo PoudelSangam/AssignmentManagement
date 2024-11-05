@@ -12,10 +12,8 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__.'/../../');
 $dotenv->load();
 
-function sendNotifications($conn, $intake_year, $faculty, $college, $title, $body) {
+function sendNotifications($conn, $intake_year, $faculty, $college, $title, $body,$link="https://poudelsangam.com.np/",$semester = "5") {
     $status = "unread";
-    $semester = "5";
-
     // Insert notification into the database
     $sql = "INSERT INTO notification (notifications, status, intake, faculty, semester, college) 
             VALUES (?, ?, ?, ?, ?, ?)";
@@ -83,6 +81,7 @@ function sendNotifications($conn, $intake_year, $faculty, $college, $title, $bod
         'body' => $body,
         'icon' => '../../download.png',
         'badge' => '../../download.png',
+        'link' => $link 
     ]);
 
     if ($payload === false) {
