@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.5.0
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ftp.poudelsangam.com.np
           username: ${{ secrets.FTP_USERNAME }}  # Store your FTP username in GitHub Secrets
