@@ -3,11 +3,10 @@ name: FTP Deploy
 on:
   push:
     branches:
-      - main  # Triggers deployment on pushes to the main branch
+      - main  # Trigger on push to the main branch
 
 jobs:
   deploy:
-    name: Deploy to CPanel via FTP
     runs-on: ubuntu-latest
 
     steps:
@@ -15,12 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0  # Adjust version as needed
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}  # Store your FTP username in GitHub Secrets
-          password: ${{ secrets.FTP_PASSWORD }}  # Store your FTP password in GitHub Secrets
-          server-dir: /public_html/assignment.poudeasangam.com.np               # Directory on your CPanel server (adjust as necessary)
-          local-dir: ./assignment  
+          ftp-server: ${{ secrets.FTP_SERVER }}   # Correct input key
+          ftp-username: ${{ secrets.FTP_USERNAME }}   # Correct input key
+          ftp-password: ${{ secrets.FTP_PASSWORD }}   # Correct input key
          
-     
