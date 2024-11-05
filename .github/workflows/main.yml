@@ -17,7 +17,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          server: ftp.poudelsangam.com.np
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}  # Store your FTP username in GitHub Secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Store your FTP password in GitHub Secrets
           server-dir: /public_html/assignment.poudeasangam.com.np               # Directory on your CPanel server (adjust as necessary)
